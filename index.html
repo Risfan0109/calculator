@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Bagian Kalkulator -->
+
+      <div id="calculator">
+        <!-- Tombol Ganti Backround Kalkulator -->
+        <div id="boxColor">
+          <button class="change" id="changeBg" onclick="changeBg()"></button>
+          <button class="change" id="changeBg3" onclick="changeBg3()"></button>
+        </div>
+        <input type="text" id="calculator-screen" value="0" disabled />
+        <div class="div calculator-button">
+          <div class="row">
+            <button class="all-clear" value="0" onclick="clean()">AC</button>
+            <button class="operator" value="*" onclick="inputNumber('*')">x</button>
+            <button class="operator" value="/" onclick="inputNumber('/')">/</button>
+            <button class="clear" value="0" onclick="backspace()">C</button>
+          </div>
+          <div class="row">
+            <button class="number" value="7" onclick="inputNumber(7)">7</button>
+            <button class="number" value="8" onclick="inputNumber(8)">8</button>
+            <button class="number" value="9" onclick="inputNumber(9)">9</button>
+            <button class="operator" value="-" onclick="inputNumber('-')">-</button>
+          </div>
+          <div class="row">
+            <button class="number" value="4" onclick="inputNumber(4)">4</button>
+            <button class="number" value="5" onclick="inputNumber(5)">5</button>
+            <button class="number" value="6" onclick="inputNumber(6)">6</button>
+            <button class="operator" value="+" onclick="inputNumber('+')">+</button>
+          </div>
+          <div class="row">
+            <button class="number" value="1" onclick="inputNumber(1)">1</button>
+            <button class="number" value="2" onclick="inputNumber(2)">2</button>
+            <button class="number" value="3" onclick="inputNumber(3)">3</button>
+            <button class="operator persen" onclick="inputNumber('%')">%</button>
+          </div>
+          <div class="row">
+            <button class="number zero" value="0" onclick="inputNumber(0)">0</button>
+            <button class="desimal" value="." onclick="inputNumber('.')">.</button>
+            <button class="equal" value="=" onclick="equal()">=</button>
+          </div>
+        </div>
+        <p style="text-align: center; font-size: 12px; color: #ffffff">Calculator by Risfan Yani</p>
+      </div>
+    </div>
+    <script src="function.js"></script>
+  </body>
+</html>
